@@ -7,12 +7,18 @@
     <script src="https://kit.fontawesome.com/fd808aec88.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <link rel="stylesheet" href='css/style.css'>
-    <script src="./js/functions.js"></script>
+   
     <title>Henno Moolman-Dreyer</title>
+
+    <div class="loader-wrapper" >
+           <div class="loader"><div class="loader-inner"><div class="loader-inner1"><div class="loader-inner2"><div class="loader-inner3"></div></div></div></div></div>
+    </div>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut(2000);
+        });
+    </script>      
 </head>
-
-
-
 
 
 <body>
@@ -120,18 +126,7 @@
     <!--end of wrapper-->
         
     
-    <div class="loader-wrapper" >
-       
-        <span class="loader"><span class="loader-inner"></span></span>
-      </div>
-
-
-
-      <script>
-          $(window).on("load",function(){
-            $(".loader-wrapper").fadeOut("slow");
-          });
-      </script>
+    
 
 
 </body>
