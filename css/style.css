@@ -5,7 +5,7 @@
     --loadclr2: rgb(41, 2, 41);
     --loadclr3: rgb(158, 157, 157);
     --dark:#333;
-    --light:#fff;
+    --light:rgb(44, 26, 59);
     --Shadow: 0 1px 5px rgba(104,104,104,0.8);
 }
 
@@ -21,19 +21,22 @@ body{
     background: #ccc;
     margin: 10px 20px;
     line-height: 1.4;
-    
+    background-image: url("/img/back2.webp");
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 .btn {
-    background: var(--dark);
-    color: var(--light);
+    
+    color: var(--loadclr2);
     padding: 0.6rem 1.3rem;
     text-decoration: none;
+    text-decoration: underline;
     border: 0;
 }
 
 .btn:hover {
-    opacity: 80%
+    opacity: 50%
 }   dxcfv
 
 
@@ -144,8 +147,7 @@ img {
 .wrapper {
     display: grid;
     grid-gap: 20px; /*change this itd obsolute*/
-    
-    
+      
 }
 
 /*Navigation*/
@@ -155,6 +157,8 @@ img {
     padding: 0;
     list-style: none;
     grid-template-columns: repeat(4, 1fr);
+    background-color: var();
+    float: right;
 
 }
 
@@ -164,16 +168,17 @@ img {
     text-decoration: none;
     padding: 0.4rem ;
     text-align: center;
-    color: var(--dark);
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    box-shadow: var(--Shadow);
+    color: var(--light);
+    /* text-transform: uppercase; */
+    font-size: 1.3rem;
+    /* box-shadow: var(--Shadow); */
     
 }
 
 .main-nav a:hover {
-    background: var(--dark);
+    /* background: var(--dark); */
     color: var(--light);
+    border-bottom: 1px solid var(--light);
 }
 
 /* boonste container */
@@ -233,10 +238,12 @@ img {
 .top-box-a {
     grid-area: top-box-a;
     border-radius: 10%;
+    visibility: hidden;
 }
 .top-box-b {
     grid-area: top-box-b;
     border-radius: 10%;
+    visibility: hidden;
 }
 
 /* boxes*/
@@ -282,7 +289,7 @@ img {
 footer {
     margin-top: 2rem;
     background: var(--dark);
-    color: var(--light);
+    color: white;
     text-align: center;
     padding: 1rem;
 }
@@ -292,17 +299,27 @@ footer {
 /* media queries */
 @media(max-width: 700px){
     .top-container{
+        
         grid-template-areas: 
             'showcase showcase'
             'top-box-a top-box-b';
     }
+    .showcase{
+        padding: 0 0 0 0rem;
+        
+    }
     .showcase h1 {
+        
         font-size: 2.5rem;
     }
     .main-nav ul{
+        
+        float: right;
         grid-template-columns: 1fr;
+        
     }
     .info {
+        flo
         grid-template-columns: 1fr;
     }
     .info .btn{
