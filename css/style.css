@@ -298,6 +298,11 @@ img {
     
     border-radius: 10%;
 }
+.box h6{
+    font-size: 1.1rem;
+    color: black;
+    text-decoration: underline;
+}
 
 /* info */
 
@@ -366,6 +371,89 @@ footer {
         margin: auto;
     }
 }
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .slide-wrapper {
+    width: 10912px;
+    animation: slide 40s linear infinite;
+  }
+  
+  .slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+  
+  .slide:nth-child(1) {
+    background-image: url("https://source.unsplash.com/random/728x512");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
+  
+  .slide:nth-child(2) {
+    background-image: url("https://source.unsplash.com/random/728x511");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .slide:nth-child(3) {
+    background-image: url("https://source.unsplash.com/random/728x513");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .slide:nth-child(4) {
+    background-image: url("https://source.unsplash.com/random/728x514");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .slide:nth-child(5) {
+    background-image: url("https://source.unsplash.com/random/728x516");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .slide:nth-child(6) {
+    background-image: url("https://source.unsplash.com/random/727x514");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .slide:nth-child(7) {
+    background-image: url("https://source.unsplash.com/random/726x514");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .slide:nth-child(8) {
+    background-image: url("https://source.unsplash.com/random/725x514");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .slide:nth-child(9) {
+    background-image: url("https://source.unsplash.com/random/724x514");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .slide:nth-child(10) {
+    background-image: url("https://source.unsplash.com/random/723x514");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .slide:nth-child(11) {
+    background-image: url("https://source.unsplash.com/random/723x515");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @keyframes slide {
+    20% {margin-left: 0px;}
+    90% {margin-left: -6700px;}
+  }
+  
 @media(max-width: 600px){
     .top-container{
         grid-template-areas: 
@@ -383,8 +471,11 @@ footer {
     }
 }
 
+
  @media only screen and (max-width: 768px) {
     .demo .main-title {
        font-size: 3em;
     }
  }
+
+ 
