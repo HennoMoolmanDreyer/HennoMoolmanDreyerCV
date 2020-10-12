@@ -328,6 +328,27 @@ img {
     box-shadow: var(--Shadow);
 }
 
+
+.table-responsive{
+    background-color: black;
+    
+}
+.table-responsive tbody{
+    background-color: rgb(158, 157, 157); 
+}
+.table-info{
+    color:white;
+    background-color: rgba(104,104,104,0.8);
+    
+}
+
+
+
+
+
+
+
+
 /* footer */
 footer {
     margin-top: 2rem;
