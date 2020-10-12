@@ -357,7 +357,7 @@ footer {
     }
     .main-nav ul{
         
-        float: right;
+        float: left;
         grid-template-columns: 1fr;
         
     }
@@ -369,6 +369,14 @@ footer {
         display: block;
         text-align: center;
         margin: auto;
+    }
+}
+@media(max-width: 600px){
+    .top-container{
+        grid-template-areas: 
+            'showcase'
+            'top-box-a'
+            'top-box-b';
     }
 }
 #slideshow {
@@ -454,14 +462,7 @@ footer {
     90% {margin-left: -6700px;}
   }
   
-@media(max-width: 600px){
-    .top-container{
-        grid-template-areas: 
-            'showcase'
-            'top-box-a'
-            'top-box-b';
-    }
-}
+
 @keyframes spin {
     0%{
         transform: rotate(0deg);
