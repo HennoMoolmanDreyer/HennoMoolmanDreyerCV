@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="wrapper">
+        
         <!-- navigation-->
         <nav class="main-nav">
             <ul>
@@ -17,7 +18,34 @@
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <div class="dropdown">
+                
+                <button class="dropbtn">
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="#">Contact</a>
+                </div>
+                <h1>Henno Moolman-Dreyer</h1>
+            </div> 
         </nav>
+        <script>
+            $(document).ready(function(){
+                // Show hide popover
+                $(".dropdown").click(function(){
+                    $(this).find(".dropdown-menu").slideToggle("fast");
+                });
+            });
+            $(document).on("click", function(event){
+                var $trigger = $(".dropdown");
+                if($trigger !== event.target && !$trigger.has(event.target).length){
+                    $(".dropdown-menu").slideUp("slow");
+                }            
+            });
+        </script>
 <!-- test -->
         <!--boonste container-->
         <section class="top-container">
